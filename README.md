@@ -1,57 +1,50 @@
-# KORA-Discover
+<div align="center">
 
-Landing estática de KORA Discover preparada para recibir tráfico desde Meta Ads y desplegarse con Cloudflare Pages.
+# KORA Discover
 
-## Estructura
+<br>
 
-- `index.html`: landing principal.
-- `musica-local/`, `artistas-emergentes/`, `escenas-urbanas/`: páginas de contenido interconectadas con meta-títulos y meta-descripciones propios.
-- `page/`: ruta desindexada con `noindex`.
-- `robots.txt`, `sitemap.xml`, `llms.txt`: archivos de descubrimiento e indexación.
-- `_headers`: encabezados HTTP para Cloudflare Pages.
-- `assets/js/analytics.js`: integración opcional con Meta Pixel.
-- `assets/js/site.js`: conservación de UTMs, tracking del CTA y botón de compartir.
+<img src="assets/img/cora-discover-icon.svg" alt="Icono de KORA Discover" width="120" align="center">
 
-## Despliegue en Cloudflare Pages
+<p>
+  <a href="https://kora-discover.pages.dev/">
+    <img src="https://img.shields.io/badge/VER%20P%C3%81GINA-F1871C?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Ver página">
+  </a>
+  <a href="https://renzofernando.github.io/KORA-C3/">
+    <img src="https://img.shields.io/badge/VER%20APLICACI%C3%93N%20WEB-171414?style=for-the-badge&logo=github&logoColor=F1871C" alt="Ver aplicación web">
+  </a>
+</p>
 
-La URL prevista para el proyecto es:
+<strong>Descubrimiento digital de artistas emergentes mediante cápsulas breves y contexto local.</strong>
 
-`https://kora-discover.pages.dev/`
+</div>
 
-Cloudflare Pages utiliza el dominio `*.pages.dev`, no `*.pages.app`.
+<br>
 
-Configuración recomendada al conectar el repositorio de GitHub:
+KORA Discover es una landing page para presentar y validar una experiencia de descubrimiento musical centrada en encontrar artistas emergentes antes de que se vuelvan masivos. La propuesta combina cápsulas de alrededor de 30 segundos con contexto de ciudad, barrio y escena para ayudar a decidir rápidamente qué sonidos vale la pena seguir explorando, sin intentar reemplazar el streaming tradicional ni convertir el descubrimiento en una experiencia de eventos presenciales.
 
-- **Project name:** `cora-discover`
-- **Production branch:** `main`
-- **Framework preset:** None
-- **Build command:** `exit 0`
-- **Build output directory:** `.`
+## Características
 
-El repositorio debe tener `index.html` en la raíz.
+- Presenta artistas emergentes mediante cápsulas musicales breves y contexto territorial.
+- Explica la propuesta de KORA Discover con una landing responsive orientada a conversión.
+- Conecta directamente con el prototipo funcional de KORA Discover.
+- Conserva parámetros UTM al enviar tráfico desde campañas hacia el prototipo.
+- Incluye integración opcional con Meta Pixel para medición de visitas y conversiones.
+- Incorpora contenido indexable, metadatos sociales y datos estructurados para descubrimiento web.
+- Enlaza los perfiles oficiales de Instagram y Facebook del proyecto.
 
-Si Cloudflare asigna otro nombre porque `kora-discover.pages.dev` no está disponible, actualizar en los archivos los `canonical`, `og:url`, las URLs de Schema, `robots.txt`, `sitemap.xml` y `llms.txt`.
+## Tecnologías
 
-## Meta Pixel
+- HTML5
+- CSS3
+- JavaScript
+- Cloudflare Pages
+- Meta Pixel
 
-La landing funciona sin Pixel. Para activarlo, reemplazar el contenido vacío de:
+## Autor y licencia
 
-```html
-<meta name="facebook-pixel-id" content="">
-```
+[Renzo Fernando Mosquera Daza](https://github.com/RenzoFernando)
 
-por el ID real en las cuatro páginas indexables. `assets/js/analytics.js` cargará el Pixel y enviará `PageView`. Los botones que llevan al prototipo envían además el evento personalizado `TryKora`.
+© 2026 — Renzo Fernando Mosquera Daza
 
-No se incluyó un ID inventado porque debe provenir de la cuenta publicitaria real del equipo.
-
-## UTMs para Meta Ads
-
-Los parámetros `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` y `utm_term` se conservan durante la sesión y se transfieren al enlace del prototipo junto con `ref=kora-discover`.
-
-Ejemplo:
-
-`https://kora-discover.pages.dev/?utm_source=meta&utm_medium=paid_social&utm_campaign=validacion_kora&utm_content=video_ugc`
-
-## Ruta `/page/`
-
-La ruta incluye `meta robots="noindex,nofollow,noarchive"`. No se bloquea en `robots.txt` para que los rastreadores puedan leer la directiva `noindex`.
+Licencia MIT.
