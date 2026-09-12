@@ -10,12 +10,12 @@
   });
 
   if (Object.keys(campaign).length) {
-    sessionStorage.setItem('cora-discover-campaign', JSON.stringify(campaign));
+    sessionStorage.setItem('kora-discover-campaign', JSON.stringify(campaign));
   }
 
   let storedCampaign = {};
   try {
-    storedCampaign = JSON.parse(sessionStorage.getItem('cora-discover-campaign') || '{}');
+    storedCampaign = JSON.parse(sessionStorage.getItem('kora-discover-campaign') || '{}');
   } catch (_) {
     storedCampaign = {};
   }
@@ -23,12 +23,12 @@
   document.querySelectorAll('[data-app-link]').forEach((link) => {
     const destination = new URL(appUrl);
     Object.entries(storedCampaign).forEach(([key, value]) => destination.searchParams.set(key, value));
-    destination.searchParams.set('ref', 'cora-discover');
+    destination.searchParams.set('ref', 'kora-discover');
     link.href = destination.toString();
 
     link.addEventListener('click', () => {
       if (typeof window.fbq === 'function') {
-        window.fbq('trackCustom', 'TryCora', {
+        window.fbq('trackCustom', 'TryKora', {
           source_page: document.body.dataset.page || 'home',
           destination: 'prototype'
         });
@@ -41,7 +41,7 @@
     shareButton.addEventListener('click', async () => {
       const payload = {
         title: document.title,
-        text: 'Descubre música local y artistas emergentes con Cora Discover.',
+        text: 'Descubre música local y artistas emergentes con KORA Discover.',
         url: window.location.href
       };
 

@@ -1,6 +1,6 @@
-# Cora-Discover
+# KORA-Discover
 
-Landing estática de Cora Discover preparada para recibir tráfico desde Meta Ads y desplegarse con Cloudflare Pages.
+Landing estática de KORA Discover preparada para recibir tráfico desde Meta Ads y desplegarse con Cloudflare Pages.
 
 ## Estructura
 
@@ -16,7 +16,7 @@ Landing estática de Cora Discover preparada para recibir tráfico desde Meta Ad
 
 La URL prevista para el proyecto es:
 
-`https://cora-discover.pages.dev/`
+`https://kora-discover.pages.dev/`
 
 Cloudflare Pages utiliza el dominio `*.pages.dev`, no `*.pages.app`.
 
@@ -30,7 +30,7 @@ Configuración recomendada al conectar el repositorio de GitHub:
 
 El repositorio debe tener `index.html` en la raíz.
 
-Si Cloudflare asigna otro nombre porque `cora-discover.pages.dev` no está disponible, actualizar en los archivos los `canonical`, `og:url`, las URLs de Schema, `robots.txt`, `sitemap.xml` y `llms.txt`.
+Si Cloudflare asigna otro nombre porque `kora-discover.pages.dev` no está disponible, actualizar en los archivos los `canonical`, `og:url`, las URLs de Schema, `robots.txt`, `sitemap.xml` y `llms.txt`.
 
 ## Meta Pixel
 
@@ -40,17 +40,17 @@ La landing funciona sin Pixel. Para activarlo, reemplazar el contenido vacío de
 <meta name="facebook-pixel-id" content="">
 ```
 
-por el ID real en las cuatro páginas indexables. `assets/js/analytics.js` cargará el Pixel y enviará `PageView`. Los botones que llevan al prototipo envían además el evento personalizado `TryCora`.
+por el ID real en las cuatro páginas indexables. `assets/js/analytics.js` cargará el Pixel y enviará `PageView`. Los botones que llevan al prototipo envían además el evento personalizado `TryKora`.
 
 No se incluyó un ID inventado porque debe provenir de la cuenta publicitaria real del equipo.
 
 ## UTMs para Meta Ads
 
-Los parámetros `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` y `utm_term` se conservan durante la sesión y se transfieren al enlace del prototipo junto con `ref=cora-discover`.
+Los parámetros `utm_source`, `utm_medium`, `utm_campaign`, `utm_content` y `utm_term` se conservan durante la sesión y se transfieren al enlace del prototipo junto con `ref=kora-discover`.
 
 Ejemplo:
 
-`https://cora-discover.pages.dev/?utm_source=meta&utm_medium=paid_social&utm_campaign=validacion_cora&utm_content=video_ugc`
+`https://kora-discover.pages.dev/?utm_source=meta&utm_medium=paid_social&utm_campaign=validacion_kora&utm_content=video_ugc`
 
 ## Ruta `/page/`
 
