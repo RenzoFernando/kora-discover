@@ -1,17 +1,14 @@
 <div align="center">
 
-# KORA Discover
+# KORΛ DISCOVER
 
 <br>
 
-<img src="assets/img/cora-discover-icon.svg" alt="Icono de KORA Discover" width="120" align="center">
+<img src="assets/img/cora-discover-icon.svg" alt="Icono de KORΛ DISCOVER" width="120" align="center">
 
 <p>
   <a href="https://kora-discover.pages.dev/">
     <img src="https://img.shields.io/badge/VER%20P%C3%81GINA-F1871C?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Ver página">
-  </a>
-  <a href="https://renzofernando.github.io/KORA-C3/">
-    <img src="https://img.shields.io/badge/VER%20APLICACI%C3%93N%20WEB-171414?style=for-the-badge&logo=github&logoColor=F1871C" alt="Ver aplicación web">
   </a>
 </p>
 
@@ -21,13 +18,13 @@
 
 <br>
 
-KORA Discover es una landing page para presentar y validar una experiencia de descubrimiento musical centrada en encontrar artistas emergentes antes de que se vuelvan masivos. La propuesta combina cápsulas de alrededor de 30 segundos con contexto de ciudad, barrio y escena para ayudar a decidir rápidamente qué sonidos vale la pena seguir explorando, sin intentar reemplazar el streaming tradicional ni convertir el descubrimiento en una experiencia de eventos presenciales.
+KORΛ DISCOVER es una landing page para presentar y validar una experiencia de descubrimiento musical centrada en encontrar artistas emergentes antes de que se vuelvan masivos. La propuesta combina cápsulas de alrededor de 30 segundos con contexto de ciudad, barrio y escena para ayudar a decidir rápidamente qué sonidos vale la pena seguir explorando.
 
 ## Características
 
 - Presenta artistas emergentes mediante cápsulas musicales breves y contexto territorial.
-- Explica la propuesta de KORA Discover con una landing responsive orientada a conversión.
-- Conecta directamente con el prototipo funcional de KORA Discover.
+- Explica la propuesta de KORΛ DISCOVER con una landing responsive orientada a conversión.
+- Deja preparado un único punto de configuración para conectar la URL pública de la aplicación cuando esté disponible.
 - Conserva parámetros UTM al enviar tráfico desde campañas hacia el prototipo.
 - Incluye integración opcional con Meta Pixel para medición de visitas y conversiones.
 - Incorpora contenido indexable, metadatos sociales y datos estructurados para descubrimiento web.
@@ -48,3 +45,7 @@ KORA Discover es una landing page para presentar y validar una experiencia de de
 © 2026 — Renzo Fernando Mosquera Daza
 
 Licencia MIT.
+
+## URL de la aplicación
+
+La URL pública de la aplicación está pendiente. Cuando exista, debe configurarse en `assets/js/site.js` mediante la constante `APP_URL`.

@@ -1,17 +1,19 @@
-# KORA Discover
+# KORΛ DISCOVER
 
-> KORA Discover es una experiencia digital para descubrir artistas emergentes antes de que se vuelvan masivos mediante cápsulas de alrededor de 30 segundos y contexto de ciudad, barrio y escena.
+> KORΛ DISCOVER es una experiencia digital para descubrir artistas emergentes antes de que se vuelvan masivos mediante cápsulas de alrededor de 30 segundos y contexto de ciudad, barrio y escena.
 
 ## Sitio principal
 - https://kora-discover.pages.dev/
 
-## Prototipo funcional
-- https://renzofernando.github.io/KORA-C3/
+## Aplicación
+- URL pública pendiente de actualización.
 
 ## Contenido principal
 - /musica-local/ — qué aporta la proximidad cultural al descubrimiento musical.
 - /artistas-emergentes/ — por qué la visibilidad es una barrera para artistas nuevos.
 - /escenas-urbanas/ — cómo ciudades, barrios y comunidades forman escenas musicales.
+- /acerca/ — propósito, enfoque y estado del proyecto.
+- /legal/ — términos, tratamiento de datos, derechos musicales y condiciones comerciales.
 
 ## Conceptos clave
 - cápsulas musicales de alrededor de 30 segundos;
@@ -22,7 +24,7 @@
 - prototipo en validación, no producto comercial final.
 
 ## Diferenciación
-KORA Discover no busca reemplazar servicios de streaming ni vender experiencias presenciales o eventos. Su función ocurre antes: ayudar a encontrar artistas emergentes, entender de dónde vienen y decidir rápidamente si conectan con el usuario.
+KORΛ DISCOVER se diferencia por combinar cápsulas de alrededor de 30 segundos, artistas emergentes y contexto de ciudad, barrio y escena para facilitar un descubrimiento musical rápido y significativo.
 
 ## Uso recomendado
-Si resumes KORA Discover, prioriza estas tres ideas: 30 segundos para descubrir, contexto local para entender el artista y acceso a escenas emergentes fuera de los feeds masivos.
+Si resumes KORΛ DISCOVER, prioriza estas tres ideas: 30 segundos para descubrir, contexto local para entender el artista y acceso a escenas emergentes que todavía tienen poca visibilidad.

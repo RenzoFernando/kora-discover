@@ -1,5 +1,6 @@
 (() => {
-  const appUrl = 'https://renzofernando.github.io/KORA-C3/';
+  // Pega aquí la URL pública de la aplicación cuando esté disponible.
+  const APP_URL = '';
   const trackingKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
   const params = new URLSearchParams(window.location.search);
   const campaign = {};
@@ -20,13 +21,39 @@
     storedCampaign = {};
   }
 
-  document.querySelectorAll('[data-app-link]').forEach((link) => {
-    const destination = new URL(appUrl);
-    Object.entries(storedCampaign).forEach(([key, value]) => destination.searchParams.set(key, value));
-    destination.searchParams.set('ref', 'kora-discover');
-    link.href = destination.toString();
+  const showPendingMessage = () => {
+    let notice = document.querySelector('[data-app-pending-notice]');
+    if (!notice) {
+      notice = document.createElement('div');
+      notice.className = 'app-pending-notice';
+      notice.dataset.appPendingNotice = '';
+      notice.setAttribute('role', 'status');
+      notice.textContent = 'La nueva versión de KORΛ DISCOVER estará disponible próximamente.';
+      document.body.appendChild(notice);
+    }
 
-    link.addEventListener('click', () => {
+    notice.classList.add('is-visible');
+    window.clearTimeout(showPendingMessage.timeoutId);
+    showPendingMessage.timeoutId = window.setTimeout(() => notice.classList.remove('is-visible'), 2400);
+  };
+
+  document.querySelectorAll('[data-app-link]').forEach((link) => {
+    if (APP_URL) {
+      const destination = new URL(APP_URL);
+      Object.entries(storedCampaign).forEach(([key, value]) => destination.searchParams.set(key, value));
+      destination.searchParams.set('ref', 'kora-discover');
+      link.href = destination.toString();
+    } else {
+      link.href = '#app-pendiente';
+    }
+
+    link.addEventListener('click', (event) => {
+      if (!APP_URL) {
+        event.preventDefault();
+        showPendingMessage();
+        return;
+      }
+
       if (typeof window.fbq === 'function') {
         window.fbq('trackCustom', 'TryKora', {
           source_page: document.body.dataset.page || 'home',
@@ -41,7 +68,7 @@
     shareButton.addEventListener('click', async () => {
       const payload = {
         title: document.title,
-        text: 'Descubre música local y artistas emergentes con KORA Discover.',
+        text: 'Descubre música local y artistas emergentes con KORΛ DISCOVER.',
         url: window.location.href
       };
 
