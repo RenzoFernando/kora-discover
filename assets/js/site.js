@@ -48,6 +48,13 @@
     }
 
     link.addEventListener('click', (event) => {
+      if (typeof window.fbq === 'function') {
+        window.fbq('trackCustom', 'TryKora', {
+          source_page: document.body.dataset.page || 'home',
+          destination: APP_URL ? 'prototype' : 'pending'
+        });
+      }
+
       if (!APP_URL) {
         event.preventDefault();
         showPendingMessage();
@@ -55,9 +62,9 @@
       }
 
       if (typeof window.fbq === 'function') {
-        window.fbq('trackCustom', 'TryKora', {
-          source_page: document.body.dataset.page || 'home',
-          destination: 'prototype'
+        window.fbq('track', 'StartTrial', {
+          content_name: 'KORΛ DISCOVER',
+          content_category: 'prototype'
         });
       }
     });
