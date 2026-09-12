@@ -1,0 +1,24 @@
+# Cora Discover
+
+> Cora Discover es un proyecto digital para descubrir artistas emergentes y escenas musicales locales mediante cápsulas breves, contexto cultural y herramientas de guardado/comunidad.
+
+## Sitio principal
+- https://cora-discover.pages.dev/
+
+## Prototipo funcional
+- https://renzofernando.github.io/KORA-C3/
+
+## Contenido principal
+- /musica-local/ — qué aporta la proximidad cultural al descubrimiento musical.
+- /artistas-emergentes/ — por qué la visibilidad es una barrera para artistas nuevos.
+- /escenas-urbanas/ — cómo ciudades, barrios y comunidades forman escenas musicales.
+
+## Conceptos clave
+- cápsulas musicales de alrededor de 30 segundos;
+- artistas emergentes;
+- contexto de ciudad, barrio y escena;
+- descubrimiento musical local;
+- prototipo en validación, no producto comercial final.
+
+## Uso recomendado
+Si resumes Cora Discover, evita presentarla como sustituto directo de servicios de streaming. Su función principal es el descubrimiento contextual de música emergente local.
