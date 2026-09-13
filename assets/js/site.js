@@ -1,6 +1,6 @@
 (() => {
-  // Pega aquí la URL pública de la aplicación cuando esté disponible.
-  const APP_URL = '';
+  // URL pública actual de la aplicación.
+  const APP_URL = 'https://renzofernando.github.io/KORA/';
   const trackingKeys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
   const params = new URLSearchParams(window.location.search);
   const campaign = {};
